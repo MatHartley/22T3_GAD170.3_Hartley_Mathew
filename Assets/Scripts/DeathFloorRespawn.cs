@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace MathewHartley
 {
-    public class SceneRespawn : MonoBehaviour
+    public class DeathFloorRespawn : MonoBehaviour
     {
         private void OnCollisionEnter(Collision collision)
         {

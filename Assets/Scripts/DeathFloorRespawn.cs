@@ -10,7 +10,7 @@ namespace MathewHartley
         private void OnCollisionEnter(Collision collision)
         {
             Debug.Log("PlayerCharacter has hit the DoomCube");
-            SceneManager.LoadScene("World");
+            SceneManager.LoadScene("LevelOne");
         }
     }
 }

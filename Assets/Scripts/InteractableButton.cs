@@ -13,7 +13,6 @@ namespace MathewHartley
     {
         public GameObject lightPlatforms;
         [SerializeField] bool playerClose = false;
-        [SerializeField] bool buttonToggle = true;
 
         /// <summary>
         /// checks if the player character is close to the button
@@ -26,28 +25,9 @@ namespace MathewHartley
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    lightPlatforms.SetActive(buttonToggle);
+                    EventsManager.OnButtonPressEvent?.Invoke();
                     Debug.Log("Platform button activated");
-                    ButtonSwitch();
                 }
-            }
-        }
-
-        /// <summary>
-        /// a boolen switch to allow the button to turn the platforms on if they are off,
-        /// or off if they are on
-        /// </summary>
-        void ButtonSwitch()
-        {
-            if (buttonToggle == true)
-            {
-                buttonToggle = false;
-                Debug.Log("buttonToggle is false");
-            }
-           else  if (buttonToggle == false)
-            {
-                buttonToggle = true;
-                Debug.Log("buttonToggle is true");
             }
         }
 

@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace MathewHartley
+{
+    public class EventsManager
+    {
+        //This will contain all of our events
+        //Event delegates have two parts
+        //the DELEGATE which is the type of event
+        //the EVENT which gets announced
+
+        //THIS is the TYPE of event we will call
+        public delegate void VoidDelegate();
+
+        //THIS is the EVENT itself
+        public static VoidDelegate OnButtonPressEvent;
+        public static VoidDelegate OnMoveTutorialTrigger;
+        public static VoidDelegate OnJumpTutorialTrigger;
+        public static VoidDelegate OnButtonTutorialTrigger;
+        public static VoidDelegate OnFallMessageTrigger;
+        public static VoidDelegate OnEndMessageTrigger;
+    }
+}

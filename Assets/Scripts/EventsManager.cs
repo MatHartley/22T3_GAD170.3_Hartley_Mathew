@@ -16,10 +16,5 @@ namespace MathewHartley
 
         //THIS is the EVENT itself
         public static VoidDelegate OnButtonPressEvent;
-        public static VoidDelegate OnMoveTutorialTrigger;
-        public static VoidDelegate OnJumpTutorialTrigger;
-        public static VoidDelegate OnButtonTutorialTrigger;
-        public static VoidDelegate OnFallMessageTrigger;
-        public static VoidDelegate OnEndMessageTrigger;
     }
 }

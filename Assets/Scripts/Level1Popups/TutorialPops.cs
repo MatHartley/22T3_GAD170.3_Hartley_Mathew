@@ -5,7 +5,7 @@ using UnityEngine;
 namespace MathewHartley
 {
     /// <summary>
-    /// The popup tutorial mechanic of the game
+    /// The popup tutorial mechanic (2) of the game
     /// This is intended to be a manager class to control all pop up messages during gameplay
     /// It currently does not work in this form
     /// The currently implemented system of individual scripts for each trigger is working

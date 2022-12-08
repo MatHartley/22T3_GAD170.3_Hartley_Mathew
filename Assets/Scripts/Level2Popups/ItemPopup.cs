@@ -10,15 +10,14 @@ namespace MathewHartley
     /// It is functional, but not as streamlined as I would like
     /// The popup manager is not functional if this is active
     /// </summary>
-    public class NPCPopup : MonoBehaviour
+    public class ItemPopup : MonoBehaviour
     {
-        public GameObject missingPopup;
-        //public GameObject foundPopup;
+        public GameObject itemPopup;
         //public script itemGet;
 
 
         /// <summary>
-        /// shows the NPC's pop up if the player character enters the trigger
+        /// shows the Item's pop up if the player character enters the trigger
         /// </summary>
         /// <param name="other"></param>
         private void OnTriggerEnter(Collider other)
@@ -26,18 +25,12 @@ namespace MathewHartley
             if (other.tag == "PlayerCharacter")
             {
                 Debug.Log("NPC Trigger Active");
-                //if (itemGet.itemCollect == true)
-                //{
-                //foundPopup.SetActive(true);
-                //}
-                //        else
-                //        {
-                missingPopup.SetActive(true);
+                itemPopup.SetActive(true);
             }
         }
 
         /// <summary>
-        /// removes the NPC's pop up if the player character leaves the trigger
+        /// removes the Item's pop up if the player character leaves the trigger
         /// </summary>
         /// <param name="other"></param>
         private void OnTriggerExit(Collider other)
@@ -45,13 +38,7 @@ namespace MathewHartley
             if (other.tag == "PlayerCharacter")
             {
                 Debug.Log("NPC Trigger Inactive");
-                //        if (itemGet.itemCollect == true)
-                //        {
-                //            foundPopup.SetActive(false);
-                //        }
-                //        else
-                //        {
-                missingPopup.SetActive(false);
+                itemPopup.SetActive(false);
             }
         }
     }

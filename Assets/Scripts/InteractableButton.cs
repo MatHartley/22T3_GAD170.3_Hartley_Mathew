@@ -5,9 +5,8 @@ using UnityEngine;
 namespace MathewHartley
 {
     /// <summary>
-    /// The interactable button and transient block mechanic of the game
+    /// The interactable button mechanic (3) of the game
     /// A button that activates/deactivates a set of platforms
-    /// It is scripted so that any given button has a single set of platforms connected to it
     /// </summary>
     public class InteractableButton : MonoBehaviour
     {

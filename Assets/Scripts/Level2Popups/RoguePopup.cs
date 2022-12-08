@@ -10,15 +10,15 @@ namespace MathewHartley
     /// It is functional, but not as streamlined as I would like
     /// The popup manager is not functional if this is active
     /// </summary>
-    public class NPCPopup : MonoBehaviour
+    public class RoguePopup : MonoBehaviour
     {
-        public GameObject missingPopup;
-        //public GameObject foundPopup;
+        public GameObject tauntPopup;
+        //public GameObject angryPopup;
         //public script itemGet;
 
 
         /// <summary>
-        /// shows the NPC's pop up if the player character enters the trigger
+        /// shows the Rogue's pop up if the player character enters the trigger
         /// </summary>
         /// <param name="other"></param>
         private void OnTriggerEnter(Collider other)
@@ -32,12 +32,12 @@ namespace MathewHartley
                 //}
                 //        else
                 //        {
-                missingPopup.SetActive(true);
+                tauntPopup.SetActive(true);
             }
         }
 
         /// <summary>
-        /// removes the NPC's pop up if the player character leaves the trigger
+        /// removes the Rogue's pop up if the player character leaves the trigger
         /// </summary>
         /// <param name="other"></param>
         private void OnTriggerExit(Collider other)
@@ -51,7 +51,7 @@ namespace MathewHartley
                 //        }
                 //        else
                 //        {
-                missingPopup.SetActive(false);
+                tauntPopup.SetActive(false);
             }
         }
     }

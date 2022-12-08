@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 namespace MathewHartley
 {
     /// <summary>
-    /// The hazard mechanic of the game 
+    /// The hazard mechanic (1) of the game 
     /// A floor that reloads the scene if the player character falls off a platform
     /// It is scripted so that it will reload any scene it is placed in with the active scene
     /// </summary>

@@ -5,15 +5,26 @@ using UnityEngine;
 
 namespace MathewHartley
 {
+    /// <summary>
+    /// Controls the transient block (4) mechanic of the game
+    /// Uses the event manager system to enable/disable the box colliders of set platform prefabs
+    /// Also changes the alpha level of said prefabs to become more "solid" when active
+    /// </summary>
     public class TransientBlock : MonoBehaviour
     {
         [SerializeField] bool buttonToggle = true;
 
+        /// <summary>
+        /// Subscribes to the event system
+        /// </summary>
         private void OnEnable()
         {
             EventsManager.OnButtonPressEvent += ToggleTangible;
         }
 
+        /// <summary>
+        /// Unsubscribes from the event system
+        /// </summary>
         private void OnDisable()
         {
             EventsManager.OnButtonPressEvent -= ToggleTangible;
